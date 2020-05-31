@@ -7,11 +7,14 @@ pipeline {
 
   }
   stages {
-    stage('') {
+    stage('error') {
       steps {
         sh 'npm install'
       }
     }
 
+  }
+  environment {
+    HOME = '.'
   }
 }
